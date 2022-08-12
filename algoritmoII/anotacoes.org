@@ -1,0 +1,40 @@
+* Programação e algoritmos II
+
+** Referencias bibliograficas
+ - SZWARCFITER, J.L; MARKENZON, L. Estruturas de dados e seus algoritmos, 2010
+
+** Sites para consulta
+- [[cplusplus.com][Bibliotecas C]]
+
+
+* Aulas
+** Aula 10/08
+
+*** Libs
+stdio.h -> Biblioteca que cntém comandos e funções de entrada e saida
+string.h -> lib trabalhar com strings
+locale.h -> configurar idiomas
+stdlib.h -> executar comandos do terminal do sistema operacional
+math.h -> Lib para operações matematicas
+
+Para chamar uma lib usar ~#include <nome-da-lib>~
+
+*** Tipos primitivos
+bool -> tipo logico(true, false, 1, 0)
+float -> tipo real com 32bits, ponto flutuante(float x = 0.343F)
+chat -> 8bits para armezenar caracteres ASCII
+int -> numeros inteiros 32bits
+
+string -> Não é primitivo porem é possivel trabalhar com auxilio de uma biblioteca string.h
+
+*** Funções basicas
+printf() -> mostrar coisas no terminal :D
+scanf() -> pegar coisas no terminal
+system() -> executar comandos externos
+setlocale(LC_all, "Portuguese") -> Permite acentuar [LC_ALL = palavra reservada]
+
+*** Operadores logicos
+== -> comparacao
+! -> negacao
+&& -> and
+duble pipe -> or
