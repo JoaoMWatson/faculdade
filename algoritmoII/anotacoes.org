@@ -8,7 +8,7 @@
 
 
 * Aulas
-** Aula 10/08
+** Aula 10/08 - Conceitos
 
 *** Libs
 stdio.h -> Biblioteca que cntém comandos e funções de entrada e saida
@@ -16,7 +16,6 @@ string.h -> lib trabalhar com strings
 locale.h -> configurar idiomas
 stdlib.h -> executar comandos do terminal do sistema operacional
 math.h -> Lib para operações matematicas
-
 Para chamar uma lib usar ~#include <nome-da-lib>~
 
 *** Tipos primitivos
@@ -37,4 +36,13 @@ setlocale(LC_all, "Portuguese") -> Permite acentuar [LC_ALL = palavra reservada]
 == -> comparacao
 ! -> negacao
 && -> and
-duble pipe -> or
+pipe -> or
+
+
+** Aula 17/08 - Escopos e sub-rotinas(funções)
+*** Escopos
+- A função main é a principal dentro de um programa main, a primeira a ser executada
+- Variaveis globais são colocadas fora de qualquer função ou pelo ~~#define <nome> <tipo>~
+- Função get() e puts()
+  - serve para lidar com strings, le o buffer e consegue mostrar toda a string de uma vez
+- Precisa declarar a função antes de definir, antes da main
