@@ -1,0 +1,35 @@
+* Banco de Dados I - Prof: Thiago Claro - Sala A214
+** Referencias:
+-
+
+* Aulas
+** 18/08/22 - Inicio Modelagem
+*** Modelos de banco de dados
+- Modelo Conceitual
+- Modelo Logico
+  - Representação lógico dos dados e da forma como se relacionam
+- Modelo Fisico
+*** Conceitos
+- Entidades: Algo sobre qual armazenamos dados Ex.: Cliente, Fornecedor
+  Não precisa ser tangivel
+- Atributo: Dados que descrevem, colocam caracteristicas na entidade
+*** Instancia da Entidade
+- Grupo de valores de atributos(dados) que descreve uma ocorrencia
+  individual de uma entidade
+*** Identificador da Entidade(id)
+- Atributo identificados da instancia, unico e geralmente sequancial(quando artificial)
+- Identificador natural: Dado colocado pelo usuario
+- Identificador artificial: Dado criado pelo banco de dados
+*** Relacionamentos
+- Tipos:
+  - 1-1: Uma da entidade A instancia esta relacionada apenas em uma instancia da entidade B
+    Geralmente usado em situações para especialização de tabela.
+  - 1-N: Cada instancia da entidade A podem estar relacionada a N instancias da entidade B
+  - N-M: N instancias da entidade A podem estar relacionadas a M instacias da entidade B
+  - Auto-Relacionamento: Indica que uma instancia da entidade A
+    pode estar relacinada a outra instancia da entidade A
+*** Dominio
+- Usado para garantir a qualidade do dados que entra no banco
+- 1 Nivel: Tipo de dado armazenado no atributo
+- 2 Nivel: Conjunto de valores validos para um atributo, limita valores que podem ser usados
+***
