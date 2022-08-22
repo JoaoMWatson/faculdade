@@ -17,6 +17,8 @@ double calcRaio(double diametro);
 double calcArea(double raio);
 void exibir(double comprimento, double diamentro, double area, double raio);
 void controle();
+int calcFlag = 0;
+
 
 int main(){
   controle();
@@ -58,6 +60,15 @@ double lerComprimento(){
   return(in_comprimento);
 }
 
+void exibir(double comprimento, double diametro, double area, double raio){
+  system("clear");
+  printf("Comprimento: %.2f", comprimento);
+  printf("\nDiametro: %.2f ", diametro);
+  printf("\nArea: %.2f", area);
+  printf("\nRaio: %.2f ", raio);
+
+  calcFlag = 0;
+}
 
 void controle(){
   int opcao = 0;
@@ -75,9 +86,11 @@ void controle(){
       diametro = calcDiametro(comprimento);
       raio = calcRaio(diametro);
       area = calcArea(raio);
+      printf("Calculo Feito!");
+      calcFlag = 1;
     }
     else if (opcao == 3) {
-
+      exibir(comprimento, diametro, area, raio);
     }
     else if (opcao == 4) {
       system("exit");
