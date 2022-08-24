@@ -23,34 +23,43 @@ t →  tempo
 */
 
 void menu();
+void exibir(double capital);
 double calc();
+
+void exibir(double capital){
+  printf("\nO Capital inicial: %.2f", capital);
+}
 
 double calc(){
   double result = 0;
 
-  result =
+  result = 26950 / (0.5 * 24);
 
   return result;
 }
 
 void menu(){
   int option = 0;
-  while(option != 2){
-    printf("Menu\n 1 - Calcular\n 2 - Sair\n");
+  double result = 0;
+
+  while(option != 3){
+    printf("\n=========================\nMenu\n1 - Calcular\n2 - Exibir\n3 - Sair\nEscolha: ");
     scanf("%d", &option);
 
     if (option == 1) {
-      system("clear");
       printf("Calculando...");
-
+      result = calc();
     }
     else if(option == 2){
+      printf("Exibir");
+      exibir(result);
+    }
+    else if(option == 3){
       printf("Saindo...");
+      system("exit");
     }
   }
-
 }
-
 
 int main(){
   menu();

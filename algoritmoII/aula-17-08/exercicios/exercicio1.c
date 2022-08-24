@@ -61,11 +61,11 @@ double lerComprimento(){
 }
 
 void exibir(double comprimento, double diametro, double area, double raio){
-  system("clear");
-  printf("Comprimento: %.2f", comprimento);
-  printf("\nDiametro: %.2f ", diametro);
+
+  printf("\n\nComprimento: %.2f", comprimento);
+  printf("\nDiametro: %.2f", diametro);
   printf("\nArea: %.2f", area);
-  printf("\nRaio: %.2f ", raio);
+  printf("\nRaio: %.2f\n\n", raio);
 
   calcFlag = 0;
 }
@@ -76,8 +76,9 @@ void controle(){
 
   while(opcao != 4){
 
-    printf("1: ler \n2: calcular \n3: exibir \n4: sair \n Escolha:");
+    printf("\n===================\n1: ler \n2: calcular \n3: exibir \n4: sair \nEscolha:");
     scanf("%i", &opcao);
+    printf("\n===================");
 
     if(opcao == 1){
       comprimento = lerComprimento();
@@ -86,7 +87,7 @@ void controle(){
       diametro = calcDiametro(comprimento);
       raio = calcRaio(diametro);
       area = calcArea(raio);
-      printf("Calculo Feito!");
+      printf("\n\nCalculo Feito!\n");
       calcFlag = 1;
     }
     else if (opcao == 3) {

@@ -15,7 +15,6 @@ int calcFlag = 0;
 
 
 void display(double altura, double base, double area){
-  system("clear");
   printf("Altura = %.2f", altura);
   printf("\nBase = %.2f", base);
   printf("\nArea = %.2f", area);
@@ -41,8 +40,6 @@ double readBase(){
 double readAltura(){
   double altura;
 
-  system("clear");
-
   printf("\nAltura: ");
   scanf("%lf", &altura);
 
@@ -54,14 +51,12 @@ int main(){
   double altura, base, area = 0;
 
   while(option != 4){
-    system("clear");
 
-    printf("1 = Inserir\n2 = Calcular\n3 = Mostrar\n4 = Sair\nEscolha: ");
+    printf("\n\n============================\n1 = Inserir\n2 = Calcular\n3 = Mostrar\n4 = Sair\nEscolha: ");
     scanf("%d", &option);
 
     if(option == 1){
-      printf("Iniciando leitura...");
-      system("sleep 2");
+      printf("\nIniciando leitura...");
 
       altura = readAltura();
       base = readBase();
